@@ -94,6 +94,6 @@ app.get('/cancel', (req, res) => {
     res.render("cancel");
 });
 
-app.listen(21350, () => {
+app.listen(3000, () => {
     console.log("Server is runing");
 });
