@@ -38,14 +38,14 @@ app.get('/paypal', (req, res) =>{
                 "items": [{
                     "name": "item",
                     "sku": "item",
-                    "price": "1.00",
-                    "currency": "USD",
+                    "price": "100.00",
+                    "currency": "BRL",
                     "quantity": 1
                 }]
             },
             "amount": {
-                "currency": "USD",
-                "total": "1.00"
+                "currency": "BRL",
+                "total": "100.00"
             },
             "description": "This is the payment description."
         }]
@@ -71,8 +71,8 @@ app.get('/success', (req, res) =>{
         "payer_id": PayerID,
         "transactions": [{
             "amount": {
-                "currency": "USD",
-                "total": "1.00"
+                "currency": "BRL",
+                "total": "100.00"
             }
         }]
     };
@@ -94,6 +94,6 @@ app.get('/cancel', (req, res) => {
     res.render("cancel");
 });
 
-app.listen(21350, () => {
+app.listen(3000, () => {
     console.log("Server is runing");
 });
