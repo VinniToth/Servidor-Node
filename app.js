@@ -6,7 +6,7 @@ const paypal = require("paypal-rest-sdk");
 
 const app = express();
 
-app.engine("ejs", engines.ejs);
+app.engine('ejs', require('ejs').renderFile);
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
