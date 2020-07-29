@@ -20,7 +20,7 @@ paypal.configure({
   });
 
 app.get("/", (req, res) => {
-    res.render("index");
+    res.render("../views/index");
 });
 
 app.get('/paypal', (req, res) =>{
